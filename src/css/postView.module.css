@@ -1,0 +1,409 @@
+/* PostView.module.css */
+
+.container {
+  padding: 20px;
+  padding-top: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  background-color: white;
+  display: block;
+  max-width: fit-content;
+  margin-top: 50px;
+}
+
+.title {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 400;
+}
+
+.body {
+  margin-left: 20px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.end {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editButton:hover {
+  background-color: lightblue;
+}
+
+.editButton {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background-color: blue;
+  margin-right: 5px;
+  width: 40%;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+  width: 50%;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal {
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 400px;
+  background-color: white;
+  width: 674px;
+  height: 321px;
+  box-shadow: 5px 10px 18px #221b1b;
+}
+
+.modalBody {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: medium;
+}
+
+.modalHead {
+  text-align: center;
+}
+
+.modalButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.modalDeleteButton {
+  background-color: white;
+  color: rgb(187, 19, 19);
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 30px;
+  width: 40%;
+}
+.modalDeleteButton:hover {
+  color: white;
+  background-color: red;
+}
+
+.modalEditButton {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  margin-right: 10px;
+  width: 35%;
+}
+
+.modalEditButton:hover {
+  color: black;
+  background-color: gray;
+}
+
+.containerEdit {
+  padding: 20px;
+  max-width: 800px;
+  margin-top: 200px;
+  margin-left: 300px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #201d1d;
+}
+
+.headerEdit {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formGroupEdit {
+  margin-bottom: 15px;
+}
+
+.inputEdit,
+.textareaEdit {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.textareaEdit {
+  height: 150px;
+  resize: vertical;
+}
+
+.btnCancelEdit {
+  display: block;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20px;
+  width: 40%;
+}
+
+.btnCancelEdit:hover {
+  background-color: gray;
+}
+
+.btnPrimaryEdit {
+  display: block;
+  padding: 10px;
+  background-color: white;
+  color: blue;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 10px;
+  border: 1px solid blue;
+  width: 40%;
+}
+
+.btnPrimaryEdit:hover {
+  background-color: #95bfec;
+}
+
+.pEdit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.errorMessageEdit {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+  .container,
+  .containerEdit {
+    padding: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerEdit {
+    margin-top: 250px;
+  }
+  .modal {
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  .containerEdit {
+    padding: 10px;
+    max-width: 600px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerEdit {
+    margin-top: 300px;
+    margin-left: 120px;
+    max-width: 760px;
+  }
+
+  .wrap,
+  .modal {
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: none;
+  }
+
+  .title,
+  .body,
+  .end,
+  .modalBody,
+  .modalHead,
+  .modalButton,
+  .pEdit {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .modalDeleteButton,
+  .modalEditButton,
+  .btnCancelEdit,
+  .btnPrimaryEdit {
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .editButton,
+  .deleteButton {
+    width: 60px;
+  }
+  .modal {
+    margin-top: 350px;
+    margin-left: 80px;
+    margin-right: auto;
+    width: 80%;
+    height: 40vh;
+    box-shadow: 5px 10px 18px #221b1b;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container,
+  .containerEdit {
+    padding: 5px;
+    max-width: 350px;
+    margin-top: 70px;
+    margin-left: 160px;
+    margin-right: auto;
+  }
+  .containerEdit {
+    margin-top: 300px;
+    margin-left: 60px;
+    max-width: 460px;
+  }
+
+  .wrap,
+  .modal {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .title,
+  .body,
+  .end,
+  .modalBody,
+  .modalHead,
+  .modalButton,
+  .pEdit {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .editButton,
+  .deleteButton,
+  .modalDeleteButton,
+  .modalEditButton,
+  .btnCancelEdit,
+  .btnPrimaryEdit {
+    /* width: 40%; */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .modal {
+    margin-top: 350px;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 85%;
+    height: 40vh;
+    box-shadow: 5px 10px 18px #221b1b;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 5px;
+    max-width: 300px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerEdit {
+    padding: 5px;
+    max-width: 300px;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap,
+  .modal {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .title,
+  .body,
+  .end,
+  .modalBody,
+  .modalHead,
+  .modalButton,
+  .pEdit {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .editButton,
+  .deleteButton,
+  .modalDeleteButton,
+  .modalEditButton,
+  .btnCancelEdit,
+  .btnPrimaryEdit {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .modal {
+    margin-top: 250px;
+    margin-left: 15px;
+    margin-right: auto;
+    width: 80%;
+    box-shadow: 5px 10px 18px #221b1b;
+  }
+}

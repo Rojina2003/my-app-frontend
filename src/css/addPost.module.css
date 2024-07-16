@@ -1,0 +1,164 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 100px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 18px 18px 18px 18px #271f1f;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.btnCancel,
+.btnPrimary {
+  display: block;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.btnCancel {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btnCancel:hover {
+  background-color: rgb(161, 156, 156);
+  color: rgb(19, 16, 16);
+}
+
+.btnPrimary {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+}
+
+.btnPrimary:hover {
+  background-color: #95bfec;
+}
+
+.p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-left: 140px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .p {
+    flex-direction: row;
+  }
+
+  .btnPrimary,
+  .btnCancel {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 15px;
+    margin: 50px;
+    margin-top: 100px;
+    max-width: 90%;
+    margin-left: 80px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btnPrimary,
+  .btnCancel {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 10px;
+    max-width: 350px;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header {
+    margin-bottom: 15px;
+  }
+
+  .formGroup {
+    margin-bottom: 10px;
+  }
+
+  .input,
+  .textarea {
+    padding: 8px;
+  }
+
+  .textarea {
+    height: 100px;
+  }
+
+  .btnCancel,
+  .btnPrimary {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .p {
+    flex-direction: row;
+  }
+}
